@@ -5,7 +5,7 @@ import User from '../models/User.js';
 const router = express.Router();
 
 // POST /api/users/register
-router.post('register', async (req, res) => {
+router.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
 
